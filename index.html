@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./scss/aboutUs.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <div class="aboutUs__wrapper">
+      <!-- aboutUs__main -->
+      <header class="header"></header>
+      <div class="aboutUs__main">
+        <div class="aboutUs__main-wrapper">
+          <h1 class="aboutUs__main-title">We are Serverbee</h1>
+          <div class="aboutUs__main-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur
+            </p>
+          </div>
+
+          <a class="aboutUs__main-button">Choose a plan</a>
+        </div>
+
+        <img
+          class="aboutUs__main-bg__img"
+          srcset="
+            ./img/illustration-map-mobile.svg      100w,
+            ./img/illustration-MAP-desktop-v2.svg 1280w
+          "
+          src=" ./img/illustration-map-mobile.svg.svg"
+          sizes="(max-width: 1280px) 100vw "
+          alt="map"
+        />
+        <!-- <img
+        class="aboutUs__main-bg__img"
+        src="
+        ./img/illustration-MAP-desktop.svg
+      "
+        alt="map"
+      /> -->
+        <!-- <img
+          class="aboutUs__main-bg__img"
+          src="
+          ./img/illustration-map-mobile.svg
+        "
+          alt="map"
+        /> -->
+
+        <!-- <div class="aboutUs__main-bg">
+          <img class="main-bg__img" src="./img/illustration-MAP-desktop.svg" alt="map" />
+        </div> -->
+      </div>
+
+      <!-- aboutUs__mission -->
+      <div class="aboutUs__mission">
+        <div class="aboutUs__mission-wrap">
+          <div class="aboutUs__mission-img-wrapper">
+            <img class="aboutUs__mission-img" src="./img/illustration-compass.svg" alt="compass" />
+          </div>
+          <!-- <p class="aboutUs__mission-img">Lorem ipsum dolor</p> -->
+          <div class="aboutUs__mission-inner">
+            <h2 class="aboutUs__mission-title">Our mission</h2>
+            <p class="aboutUs__mission-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur
+            </p>
+          </div>
+        </div>
+        <ul class="aboutUs__mission-list">
+          <li class="aboutUs__mission-item">
+            <img class="aboutUs__mission-item-img" src="./img/icon-poly-check.svg" alt="check" />
+
+            <h2 class="aboutUs__mission-item-title">Check health complaints</h2>
+            <p class="aboutUs__mission-item-text">
+              Check the disease so you can easily choose the right specialist
+            </p>
+          </li>
+          <li class="aboutUs__mission-item">
+            <img class="aboutUs__mission-item-img" src="./img/icon-poly-check.svg" alt="check" />
+
+            <h2 class="aboutUs__mission-item-title">Check health complaints</h2>
+            <p class="aboutUs__mission-item-text">
+              Check the disease so you can easily choose the right specialist
+            </p>
+          </li>
+          <li class="aboutUs__mission-item">
+            <img class="aboutUs__mission-item-img" src="./img/icon-poly-check.svg" alt="check" />
+
+            <h2 class="aboutUs__mission-item-title">Check health complaints</h2>
+            <p class="aboutUs__mission-item-text">
+              Check the disease so you can easily choose the right specialist
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- aboutUs__contacts -->
+      <div class="aboutUs__contacts">
+        <div class="aboutUs__contacts-wrap">
+          <div class="aboutUs__contacts-inner">
+            <div class="aboutUs__contacts__locations">
+              <h2 class="aboutUs__contacts__locations-title">Contacts & departments</h2>
+              <p class="aboutUs__contacts__locations-text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur
+              </p>
+              <ul class="aboutUs__contacts__locations-list">
+                <li class="aboutUs__contacts__locations-item">
+                  <img
+                    class="aboutUs__contacts__locations-img"
+                    src="./img/icon-Ukraine-100.svg"
+                    alt="Ukraine-map"
+                  />
+                  <div class="aboutUs__contacts__locations-card">
+                    <h3 class="aboutUs__contacts__locations-country">Ukraine</h3>
+                    <p class="aboutUs__contacts__locations-sity">Kyiv</p>
+                    <p class="aboutUs__contacts__locations-phone">+38 096 111 11 11</p>
+                    <p class="aboutUs__contacts__locations-mail">info@serverbee.net</p>
+                  </div>
+                </li>
+                <li class="aboutUs__contacts__locations-item">
+                  <img
+                    class="aboutUs__contacts__locations-img"
+                    src="./img/icon-Spain-100.svg"
+                    alt="Spain-map"
+                  />
+                  <div class="aboutUs__contacts__locations-card">
+                    <h3 class="aboutUs__contacts__locations-country">Spain</h3>
+                    <p class="aboutUs__contacts__locations-sity">Salou</p>
+                    <p class="aboutUs__contacts__locations-phone">+34 644 111 11 11</p>
+                    <p class="aboutUs__contacts__locations-mail">info@serverbee.net</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="aboutUs__contacts__locations-map-wrap">
+              <img
+                class="aboutUs__contacts__locations-map"
+                src="./img/illustration-small-map.svg"
+                alt="small-map"
+              />
+            </div>
+          </div>
+          <ul class="aboutUs__contacts__mails-list">
+            <li class="aboutUs__contacts__mails-item">
+              <img class="aboutUs__contacts__mails-img" src="./img/Mail-icon.svg" alt="mail" />
+              <div class="aboutUs__contacts__mails-card">
+                <h3 class="aboutUs__contacts__mails-title">General</h3>
+                <p class="aboutUs__contacts__mails-content">general@serverbee.net</p>
+              </div>
+            </li>
+            <li class="aboutUs__contacts__mails-item">
+              <img class="aboutUs__contacts__mails-img" src="./img/Mail-icon.svg" alt="mail" />
+              <div class="aboutUs__contacts__mails-card">
+                <h3 class="aboutUs__contacts__mails-title">Sale</h3>
+                <p class="aboutUs__contacts__mails-content">sale@serverbee.net</p>
+              </div>
+            </li>
+            <li class="aboutUs__contacts__mails-item">
+              <img class="aboutUs__contacts__mails-img" src="./img/Mail-icon.svg" alt="mail" />
+              <div class="aboutUs__contacts__mails-card">
+                <h3 class="aboutUs__contacts__mails-title">HR</h3>
+                <p class="aboutUs__contacts__mails-content">hr@serverbee.net</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
