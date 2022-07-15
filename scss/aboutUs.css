@@ -926,9 +926,12 @@ body {
   }
   .aboutUs__main-wrapper {
     width: 100%;
+    min-width: 300px;
     padding: 118px 18px 0 18px;
+    padding-top: 136px;
     margin-top: 460px;
     margin-bottom: 43px;
+    margin: 0;
   }
   .aboutUs__main-title {
     position: relative;
