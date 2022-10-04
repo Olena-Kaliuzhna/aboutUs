@@ -477,6 +477,7 @@ body {
   .aboutUs__main-wrapper {
     min-width: 400px;
     max-width: 400px;
+    margin-top: 300px;
   }
   .aboutUs__main-title {
     font-size: 42px;
@@ -594,6 +595,7 @@ body {
   .aboutUs__main-wrapper {
     padding: 0 16px 50px 16px;
     max-width: 100%;
+    margin-top: 185px;
   }
   .aboutUs__main-title::before {
     content: '';
