@@ -37,6 +37,10 @@ body {
   justify-content: space-between;
   padding: 0;
   padding-left: 119px;
+  background-image: url("../img/illustration-MAP-desktop-v3-isr2.svg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right 45px;
 }
 
 .aboutUs__main-wrapper {
@@ -104,27 +108,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #1c184d;
-}
-
-.aboutUs__main-bg-wrap {
-  display: block;
-  width: 1200px;
-  max-width: 1200px;
-  height: auto;
-  background-image: url("../img/illustration-MAP-desktop-v3-isr2.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.aboutUs__main-bg__img {
-  display: block;
-  max-width: 1200px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 0px;
-  object-fit: cover;
-  object-position: 20% 20%;
-  overflow-x: hidden;
 }
 
 .aboutUs__mission {
@@ -456,11 +439,8 @@ body {
 }
 
 @media (max-width: 1700px) {
-  .aboutUs__main-bg-wrap {
-    background-position: -140px 0;
-  }
-  .aboutUs__main-bg__img {
-    max-width: 910px;
+  .aboutUs__main-wrapper {
+    padding-top: 200px;
   }
   .aboutUs__contacts::before {
     width: 1600px;
@@ -476,16 +456,10 @@ body {
   .aboutUs__main-wrapper {
     min-width: 400px;
     max-width: 515px;
-    padding: 260px 0 236px 0px;
+    padding: 170px 0 236px 0px;
   }
   .aboutUs__main-title {
     font-size: 60px;
-  }
-  .aboutUs__main-bg-wrap {
-    background-position: -215px 0;
-  }
-  .aboutUs__main-bg__img {
-    max-width: 900px;
   }
   .aboutUs__contacts::before {
     width: 1250px;
@@ -507,6 +481,10 @@ body {
 }
 
 @media (max-width: 1400px) {
+  .aboutUs__main {
+    background-size: 52%;
+    background-position: right 45px;
+  }
   .aboutUs__main-wrapper {
     min-width: 400px;
     max-width: 530px;
@@ -528,11 +506,6 @@ body {
     height: 183px;
     background-size: 100%;
   }
-  .aboutUs__main-bg-wrap {
-    background-image: url("../img/illustration-map-mobile.svg");
-    background-position: 50px -76px;
-    background-size: 140%;
-  }
   .aboutUs__contacts::before {
     width: 1180px;
     right: 0;
@@ -552,18 +525,15 @@ body {
 }
 
 @media (max-width: 1280px) {
+  .aboutUs__main {
+    padding-left: 65px;
+    background-size: 56%;
+    background-position: 105% 45px;
+  }
   .aboutUs__main-wrapper {
     min-width: 400px;
-    max-width: 450px;
-  }
-  .aboutUs__main-bg-wrap {
-    background-position: -65px -76px;
-    background-size: 190%;
-  }
-  .aboutUs__main-bg__img {
-    height: 700px;
-    object-position: 86%;
-    align-self: flex-start;
+    max-width: 455px;
+    padding-bottom: 100px;
   }
   .aboutUs__mission {
     padding: 0 50px;
@@ -581,19 +551,35 @@ body {
     min-width: 560px;
     margin-right: 0px;
   }
+  .aboutUs__contacts__mails-list {
+    position: relative;
+  }
+  .aboutUs__contacts__mails-list::after {
+    content: '';
+    display: block;
+    position: absolute;
+    max-width: 1211px;
+    height: 187px;
+    left: 0;
+    right: 0;
+    bottom: -136%;
+    background-image: url("../img/illustration-bee-v4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .aboutUs__main {
-    padding-left: 70px;
+    background-size: 54%;
+    background-position: 105% 65px;
+    padding-left: 48px;
   }
   .aboutUs__main-wrapper {
     min-width: 350px;
     max-width: 390px;
-  }
-  .aboutUs__main-bg-wrap {
-    background-position: -75px -52px;
-    background-size: 198%;
+    padding-bottom: 50px;
+    padding-top: 80px;
   }
   .aboutUs__mission {
     padding: 0 15px;
@@ -606,7 +592,7 @@ body {
   .aboutUs__mission-img-wrapper::before {
     width: 100px;
     right: 6px;
-    bottom: 163px;
+    bottom: 100px;
   }
   .aboutUs__mission-item {
     max-width: 267px;
@@ -645,16 +631,18 @@ body {
 
 @media (max-width: 880px) {
   .aboutUs__main {
-    padding-left: 55px;
+    padding-left: 35px;
+    background-size: 54%;
+    background-position: 105% 35px;
   }
   .aboutUs__main-wrapper {
     min-width: 330px;
-    max-width: 340px;
-    padding-bottom: 135px;
+    max-width: 100%;
+    padding-top: 100px;
+    padding-bottom: 37px;
   }
-  .aboutUs__main-bg-wrap {
-    background-position: -111px -42px;
-    background-size: 227%;
+  .aboutUs__main-text-first {
+    max-width: 386px;
   }
   .aboutUs__contacts-inner {
     position: relative;
@@ -667,6 +655,9 @@ body {
   .aboutUs__contacts__locations {
     max-width: 417px;
   }
+  .aboutUs__contacts__locations-title {
+    margin-left: 10px;
+  }
   .aboutUs__contacts__locations-map {
     width: 245px;
   }
@@ -678,13 +669,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    width: 211px;
-    height: 187px;
-    left: 36%;
-    bottom: 85px;
-    background-image: url("../img/illustration-bee-v6.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    bottom: -70%;
   }
 }
 
@@ -694,36 +679,19 @@ body {
     flex-direction: column;
     margin-left: 0;
     padding-left: 0;
+    background-size: 56%;
+    background-position: 105% 55px;
   }
   .aboutUs__main-wrapper {
-    padding: 0 16px 0px 16px;
+    padding: 14px 16px 0px 16px;
     max-width: 100%;
     margin-top: 0px;
   }
-  .aboutUs__main-bg-wrap {
-    height: 512px;
-    width: 100%;
-    max-width: 750px;
-    background-position: 50px -86px;
-    background-size: 130%;
-  }
   .aboutUs__main-title::before {
-    content: '';
-    position: absolute;
-    width: 340px;
-    left: 279px;
-    bottom: 10px;
-    background-image: url("../img/illustration-bee.svg");
-    transform: rotate(260deg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: none;
   }
-  .aboutUs__main-bg__img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    margin-bottom: 50px;
+  .aboutUs__main-text-first {
+    max-width: 328px;
   }
   .aboutUs__mission {
     padding: 0 15px;
@@ -844,16 +812,6 @@ body {
     flex-direction: column;
     margin-left: 0;
     padding-left: 0;
-  }
-  .aboutUs__main-bg-wrap {
-    height: 512px;
-    width: 100%;
-    max-width: 750px;
-    background-position: 25px -86px;
-    background-size: 160%;
-  }
-  .aboutUs__main-bg__img {
-    width: 100%;
   }
   .aboutUs__main-title::before {
     width: 340px;
@@ -1023,6 +981,7 @@ body {
     flex-direction: column;
     margin-left: 0;
     padding-left: 0;
+    background-image: none;
   }
   .aboutUs__main-wrapper {
     width: 100%;
@@ -1042,6 +1001,7 @@ body {
     line-height: 1.19;
   }
   .aboutUs__main-title::before {
+    display: block;
     content: '';
     position: absolute;
     height: 213px;
@@ -1060,17 +1020,11 @@ body {
     margin-bottom: 20px;
   }
   .aboutUs__main-bg-wrap {
-    height: 350px;
-  }
-  .aboutUs__main-bg__img {
-    display: block;
-    align-self: center;
-    max-width: 480px;
-    width: 350px;
-    height: 350px;
-    margin-bottom: 0px;
-    object-fit: cover;
-    object-position: center;
+    height: 515px;
+    background-image: url("../img/illustration-map-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 17% 0px;
   }
   .aboutUs__mission {
     margin-bottom: 124px;
@@ -1278,8 +1232,24 @@ body {
   .aboutUs__main-title::before {
     left: 110px;
   }
+  .aboutUs__contacts__locations-map {
+    position: relative;
+    width: 247px;
+    height: 225px;
+  }
   .aboutUs__contacts__mails-list::after {
     left: 110px;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutUs__main-bg-wrap {
+    background-position: 22% 0;
+  }
+  .aboutUs__contacts__locations-map {
+    position: relative;
+    width: 207px;
+    height: 215px;
   }
 }
 /*# sourceMappingURL=aboutUs.css.map */
